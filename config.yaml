@@ -13,33 +13,21 @@ pass_dirs:
 
 # filepath
 train_dirs:
-  - ../../data/dataset/fan/train
-  - ../../data/dataset/pump/train
-  - ../../data/dataset/slider/train
-  - ../../data/dataset/ToyCar/train
-  - ../../data/dataset/ToyConveyor/train
-  - ../../data/dataset/valve/train
-add_dirs:
-  - ../../data/eval_dataset/fan/train
-  - ../../data/eval_dataset/pump/train
-  - ../../data/eval_dataset/slider/train
-  - ../../data/eval_dataset/ToyCar/train
-  - ../../data/eval_dataset/ToyConveyor/train
-  - ../../data/eval_dataset/valve/train
+  - ../data/dcase-2020/data_fan/fan/train
+  - ../data/dcase-2020/data_pump/pump/train
+  - ../data/dcase-2020/data_slider/slider/train
+  - ../data/dcase-2020/data_ToyCar/ToyCar/train
+  - ../data/dcase-2020/data_ToyConveyor/ToyConveyor/train
+  - ../data/dcase-2020/data_valve/valve/train
+add_dirs: []
 valid_dirs:
-  - ../../data/dataset/fan/test
-  - ../../data/dataset/pump/test
-  - ../../data/dataset/slider/test
-  - ../../data/dataset/ToyCar/test
-  - ../../data/dataset/ToyConveyor/test
-  - ../../data/dataset/valve/test
-test_dirs:
-  - ../../data/eval_dataset/fan/test
-  - ../../data/eval_dataset/pump/test
-  - ../../data/eval_dataset/slider/test
-  - ../../data/eval_dataset/ToyCar/test
-  - ../../data/eval_dataset/ToyConveyor/test
-  - ../../data/eval_dataset/valve/test
+  - ../data/dcase-2020/data_fan/fan/test
+  - ../data/dcase-2020/data_pump/pump/test
+  - ../data/dcase-2020/data_slider/slider/test
+  - ../data/dcase-2020/data_ToyCar/ToyCar/test
+  - ../data/dcase-2020/data_ToyConveyor/ToyConveyor/test
+  - ../data/dcase-2020/data_valve/valve/test
+test_dirs: []
 
 result_dir: ./results
 # audio preprocess
@@ -59,8 +47,7 @@ batch_size: 128
 num_workers: 0
 lr: 1e-4
 device_ids:
-  - 6
-  - 7
+  - 0
 valid_every_epochs: 10
 early_stop_epochs: -1
 start_save_model_epochs: 300
